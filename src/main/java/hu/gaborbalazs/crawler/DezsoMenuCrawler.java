@@ -17,7 +17,7 @@ import hu.gaborbalazs.enums.Restaurant;
 import hu.gaborbalazs.exception.ExceptionMessage;
 import hu.gaborbalazs.redis.entity.Menu;
 
-@Component
+//@Component
 public class DezsoMenuCrawler implements MenuCrawler {
 
 	@Autowired

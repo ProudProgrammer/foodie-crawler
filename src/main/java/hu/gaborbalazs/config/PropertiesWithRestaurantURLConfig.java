@@ -1,4 +1,4 @@
-package hu.gaborbalazs.redis.config;
+package hu.gaborbalazs.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

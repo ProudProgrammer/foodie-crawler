@@ -1,4 +1,4 @@
-package hu.gaborbalazs.redis.config;
+package hu.gaborbalazs.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
