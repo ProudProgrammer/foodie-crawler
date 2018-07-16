@@ -2,5 +2,5 @@ package hu.gaborbalazs.exception;
 
 public interface ExceptionMessage {
 
-	String JSOUP_PARSE = "JSOUP can not parse resource";
+	String IMAGE_READ = "Can not parse image";
 }

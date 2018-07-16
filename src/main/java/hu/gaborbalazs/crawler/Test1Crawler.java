@@ -1,5 +1,7 @@
 package hu.gaborbalazs.crawler;
 
+import java.util.Arrays;
+
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,8 +16,8 @@ public class Test1Crawler implements MenuCrawler {
 	
 	@Override
 	public Menu getMenu() {
-		logger.info("test1crawler");
-		return null;
+		logger.debug("Test1Crawler is crawling...");
+		return new Menu("Test1ID", "Test1Restaurant", Arrays.asList("Food1", "Food2"));
 	}
 
 }
