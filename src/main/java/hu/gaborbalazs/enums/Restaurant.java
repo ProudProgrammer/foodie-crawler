@@ -2,7 +2,7 @@ package hu.gaborbalazs.enums;
 
 public enum Restaurant {
 
-	DEZSOBA("dezsoba", "Dezső bá"), TENMINUTES("10minutes", "10 minutes");
+	DEZSOBA("dezsoba", "Dezső bá"), TENMINUTES("10minutes", "10 minutes"), DAGOBA("dagoba", "Dagoba");
 
 	private String id;
 	private String name;

@@ -12,15 +12,17 @@ public class Menu implements Serializable {
 
 	private String id;
 	private String restaurant;
+	private String url;
 	private List<String> elements;
 
 	public Menu() {
 	}
 
-	public Menu(String id, String restaurant, List<String> elements) {
+	public Menu(String id, String restaurant, String url, List<String> elements) {
 		super();
 		this.id = id;
 		this.restaurant = restaurant;
+		this.url = url;
 		this.elements = elements;
 	}
 
@@ -40,8 +42,16 @@ public class Menu implements Serializable {
 		this.restaurant = restaurant;
 	}
 
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
 	public List<String> getElements() {
-		if (elements.isEmpty()) {
+		if (elements == null) {
 			elements = new ArrayList<>();
 		}
 		return elements;
@@ -49,6 +59,11 @@ public class Menu implements Serializable {
 
 	public void setElements(List<String> elements) {
 		this.elements = elements;
+	}
+
+	@Override
+	public String toString() {
+		return "Menu [id=" + id + ", restaurant=" + restaurant + ", url=" + url + ", elements=" + elements + "]";
 	}
 
 }
