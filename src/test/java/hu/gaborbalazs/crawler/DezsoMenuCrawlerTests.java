@@ -28,20 +28,26 @@ public class DezsoMenuCrawlerTests {
 	private static final String TEST_URL = "http://test.com";
 
 	private static final String FIELD_RESOURCE_URL = "resourceUrl";
-	
+
 	private static final String FIELD_CLOCK = "clock";
-	
-	private static final Clock CLOCK_FOR_MONDAY = Clock.fixed(LocalDate.of(2018, 7, 16).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
-	
-	private static final Clock CLOCK_FOR_TUESDAY = Clock.fixed(LocalDate.of(2018, 7, 17).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
-	
-	private static final Clock CLOCK_FOR_WEDNESDAY = Clock.fixed(LocalDate.of(2018, 7, 18).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
-	
-	private static final Clock CLOCK_FOR_THURSDAY = Clock.fixed(LocalDate.of(2018, 7, 19).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
-	
-	private static final Clock CLOCK_FOR_FRIDAY = Clock.fixed(LocalDate.of(2018, 7, 20).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
-	
-	private static final Clock CLOCK_FOR_WEEKEND = Clock.fixed(LocalDate.of(2018, 7, 21).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
+
+	private static final Clock CLOCK_FOR_MONDAY = Clock
+			.fixed(LocalDate.of(2018, 7, 16).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
+
+	private static final Clock CLOCK_FOR_TUESDAY = Clock
+			.fixed(LocalDate.of(2018, 7, 17).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
+
+	private static final Clock CLOCK_FOR_WEDNESDAY = Clock
+			.fixed(LocalDate.of(2018, 7, 18).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
+
+	private static final Clock CLOCK_FOR_THURSDAY = Clock
+			.fixed(LocalDate.of(2018, 7, 19).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
+
+	private static final Clock CLOCK_FOR_FRIDAY = Clock
+			.fixed(LocalDate.of(2018, 7, 20).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
+
+	private static final Clock CLOCK_FOR_WEEKEND = Clock
+			.fixed(LocalDate.of(2018, 7, 21).atStartOfDay().toInstant(ZoneOffset.UTC), ZoneId.systemDefault());
 
 	private static final String TEST_PAGE = "<div class=\"page-content\">\r\n"
 			+ "    <section class=\"sppb-section \" style=\"margin:0px;padding:170px 0px 100px;\">\r\n"

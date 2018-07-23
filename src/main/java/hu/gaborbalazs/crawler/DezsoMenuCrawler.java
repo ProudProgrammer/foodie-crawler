@@ -29,7 +29,7 @@ public class DezsoMenuCrawler implements MenuCrawler {
 
 	private static final String DAILY_MENU_REGEX = "(.|\\s)*?</li>";
 
-	private static final Pattern MENU_ELEMENTS_PATTERN = Pattern.compile("<div class=\"sppb-menu-text\">.*?</div>");
+	private static final Pattern MENU_ELEMENTS_PATTERN = Pattern.compile("<div class=\"sppb-menu-text\">(.|\\s)*?</div>");
 
 	private static final String REPLACE_1 = "<div class=\"sppb-menu-text\">";
 
