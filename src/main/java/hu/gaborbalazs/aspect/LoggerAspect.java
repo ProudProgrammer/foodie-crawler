@@ -23,8 +23,12 @@ public class LoggerAspect {
 	@Pointcut("within(hu.gaborbalazs.batch..*)")
 	private void schedulers() {
 	}
+	
+	@Pointcut("within(hu.gaborbalazs.web..*)")
+	private void web() {
+	}
 
-	@Around("crawlers() || schedulers()")
+	@Around("crawlers() || schedulers() || web()")
 	public Object aroundRestOrDataMethods(ProceedingJoinPoint joinPoint) throws Throwable {
 		Logger logger = LoggerFactory.getLogger(joinPoint.getTarget().getClass());
 		logger.trace(BEFORE + joinPoint.getSignature().getName() + BRACKET);

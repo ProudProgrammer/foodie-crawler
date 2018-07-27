@@ -17,7 +17,7 @@ import net.sourceforge.tess4j.TesseractException;
 
 public class Tess4jCharacterRecognizer implements CharacterRecognizer {
 
-	private static final Pattern MENU_PATTERN = Pattern.compile("(Menü|Menu)(.|\\s)*?\\d");
+	private static final Pattern MENU_PATTERN = Pattern.compile("Men.\\s(.|\\s)*?\\d");
 
 	private static final String NEWLINE_REGEX = "[\\r\\n]+";
 
