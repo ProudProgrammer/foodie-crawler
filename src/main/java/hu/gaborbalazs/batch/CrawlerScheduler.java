@@ -18,7 +18,7 @@ public class CrawlerScheduler {
 	@Autowired
 	private List<MenuCrawler> crawlers;
 
-	@Scheduled(cron = "0 0/10 * * * ?")
+	// @Scheduled(cron = "0 0/10 * * * ?")
 	public void crawl() {
 		crawlers.forEach(menuCrawler -> menuRepository.save(menuCrawler.getMenu()));
 	}

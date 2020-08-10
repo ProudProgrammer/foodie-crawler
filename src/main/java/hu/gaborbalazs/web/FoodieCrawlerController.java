@@ -1,6 +1,7 @@
 package hu.gaborbalazs.web;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,8 @@ public class FoodieCrawlerController {
 	@RequestMapping(value = "/menus", method = RequestMethod.GET, produces = "application/json; charset=UTF-8")
 	public List<Menu> getMenus() {
 		List<Menu> menus = new ArrayList<>();
-		menuRepository.findAll().forEach(menus::add);
+		// menuRepository.findAll().forEach(menus::add);
+		menus.add(new Menu("NiceDining", "Nice Dining Restaurant", "http://hello.com", Arrays.asList("One","Two","Three")));
 		return menus;
 	}
 }

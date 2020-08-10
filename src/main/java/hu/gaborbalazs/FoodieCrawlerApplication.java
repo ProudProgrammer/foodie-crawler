@@ -24,6 +24,6 @@ public class FoodieCrawlerApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		crawlerScheduler.crawl();
+		// crawlerScheduler.crawl();
 	}
 }
